@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Inconsolata:wght@500&family=Merriweather:ital,wght@1,300&family=Nunito+Sans:ital,wght@0,400;0,600;1,400&family=Patrick+Hand&family=Quicksand:wght@300&family=Quintessential&display=swap');
+$border: 5px;
+
+.title {
+    color: brown;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.inp1 {
+    border-radius: $border ;
+}
+
+.inp2 {
+    border-radius: $border ;
+    margin-left: 15px;
+}
+
+.inp3 {
+    border-radius: $border ;
+    margin-left: 12px;
+
+}
+
+.inp4 {
+    border-radius: $border ;
+    margin-left: 15px;
+
+} 
+
+button {
+    border-radius: 5px;
+    width: 40px; 
+    margin-left: 150px; 
+    margin-top: 15px;
+    
+     
+ } 
+ 
+ button:hover {
+     background-color: #A95A04; 
+     font-size: large; 
+    color: aliceblue;
+
+     
+   
+ } 
+
+ .labl{
+    font-family: 'Balsamiq Sans', cursive;
+
+ }

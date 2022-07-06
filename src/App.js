@@ -1,12 +1,26 @@
 
-import './App.css';
-import Shoes from './components/shoes/shoes';
+import "../src/Styles/App.scss";
+
+import NavBar from './NavBar/NavBar';
+
 
 function App() {
-  return (
+  return ( 
+  <>
     <div className="App">
-      <header className="App-header"> 
-      <h1>Shoes's Store</h1>
+      
+           <NavBar />
+    </div>  
+  
+   
+    </>
+  );
+}
+
+export default App;
+
+ // it was a sulotion to homeWork react2
+{/* <h1>Shoes's Store</h1>
         <div className='container'>
         <div>
           <Shoes name={"nike"} size={40} price={150} url={"https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_300,c_limit/78db4c03-7352-4451-a957-fd181db46390/men-s-shoes-clothing-accessories.png"} />
@@ -23,14 +37,4 @@ function App() {
         <div>
           <Shoes name={"adidas"} size={40} price={150} url={"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/e30d866f29564c79b7fbacbb016f920f_9366/supernova-shoes.jpg"} />
         </div>
-        </div>
-
-
-      </header>
-
-    </div>
-
-  );
-}
-
-export default App;
+        </div> */}
