@@ -1,0 +1,69 @@
+$border:5px;
+.parent{
+ 
+    .title{
+        color: brown; 
+        text-align: center; 
+        margin-top: 30px;
+    }  
+
+    form{
+        text-align: center; 
+        margin-top: 50px; 
+    }  
+
+    .fname{
+        border-radius: $border;
+
+    }
+    .lname{
+        border-radius: $border;
+
+    }
+
+    .move1{
+        margin-left: 47px; 
+        border-radius: $border;
+    } 
+    .move2{
+        margin-left: 20px;
+        border-radius: $border;
+        
+    } 
+    .move3{
+        margin-left: 46px;
+        border-radius: $border;
+
+    } 
+    .move4{
+        margin-right: 20px; 
+        width: 165px;
+        border-radius: $border;
+
+    } 
+
+    .move5{
+        border-radius: $border;
+
+    }
+    .btd{
+        padding-right: 15px; 
+       padding-left: 10px;
+    } 
+  
+
+} 
+button {
+   border-radius: 5px;
+   width: 40px; 
+   margin-left: 150px; 
+   margin-top: 15px;
+   
+    
+} 
+
+button:hover{
+    background-color: #A95A04; 
+    font-size: large; 
+    color: aliceblue;
+}
