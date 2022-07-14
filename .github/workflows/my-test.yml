@@ -9,9 +9,9 @@ on:
 jobs : 
   build : 
     runs-on : ubunto-latest
-      strategy : 
-        matrix : 
-          node : [14,16,18] 
+    strategy : 
+      matrix : 
+        node : [14,16,18] 
 
        name : node${{matrix.node-version}}     
 
@@ -32,9 +32,9 @@ jobs :
 
 
   runs-on :  windows-latest
-      strategy : 
-        matrix : 
-          node : [14,16,18] 
+  strategy : 
+    matrix : 
+      node : [14,16,18] 
 
        name : node${{matrix.node-version}}     
 
