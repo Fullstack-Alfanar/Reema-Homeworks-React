@@ -1,0 +1,58 @@
+name : Create Test  
+
+on: 
+  push :
+    branches : [main,develop,product]
+  pull request : 
+    branches : [main,develop,product] 
+
+jobs : 
+  build : 
+    runs-on : ubunto-latest
+      strategy : 
+        matrix : 
+          node : [14,16,18] 
+
+       name : node${{matrix.node-version}}     
+
+    steps : 
+     - name: Check out repository code
+       uses: actions/checkout@v2   
+
+     - name : setUp node version ${{matrix.node-version}}   
+       uses: actions/checkout@v1 
+       with : 
+          node-version : ${{matrix.node-version}}    
+
+      - name: Install packages 
+        run : npm install    
+
+      - name: build 
+        run : npm run build   
+
+
+  runs-on :  windows-latest
+      strategy : 
+        matrix : 
+          node : [14,16,18] 
+
+       name : node${{matrix.node-version}}     
+
+    steps : 
+     - name: Check out repository code
+       uses: actions/checkout@v2   
+
+     - name : setUp node version ${{matrix.node-version}}   
+       uses: actions/checkout@v1 
+       with : 
+          node-version : ${{matrix.node-version}}    
+
+      - name: Install packages 
+        run : npm install    
+
+       - name: build 
+         run : npm run build
+
+          
+
+    
