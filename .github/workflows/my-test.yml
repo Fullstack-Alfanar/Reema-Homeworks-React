@@ -1,58 +1,29 @@
-name : Create Test  
-
+name: Create Test
 on: 
-  push :
-    branches : [main,develop,product]
-  pull request : 
-    branches : [main,develop,product] 
+  push:
+    branches: [main,develop,product]
+  pull_request:
+    branches: [main,develop,product]
 
-jobs : 
-  build : 
-    runs-on : ubunto-latest
-    strategy : 
-      matrix : 
-        node : [14,16,18] 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [14,16,18]
 
-       name : node${{matrix.node-version}}     
+    - name : node${{matrix.node-version}}     
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
 
-    steps : 
-     - name: Check out repository code
-       uses: actions/checkout@v2   
+      - name: setup node version ${{matrix.node-version}}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{matrix.node-version}}
 
-     - name : setUp node version ${{matrix.node-version}}   
-       uses: actions/checkout@v1 
-       with : 
-          node-version : ${{matrix.node-version}}    
+      - name : Install packages    
+        run: npm install 
 
-      - name: Install packages 
-        run : npm install    
-
-      - name: build 
-        run : npm run build   
-
-
-  runs-on :  windows-latest
-  strategy : 
-    matrix : 
-      node : [14,16,18] 
-
-       name : node${{matrix.node-version}}     
-
-    steps : 
-     - name: Check out repository code
-       uses: actions/checkout@v2   
-
-     - name : setUp node version ${{matrix.node-version}}   
-       uses: actions/checkout@v1 
-       with : 
-          node-version : ${{matrix.node-version}}    
-
-      - name: Install packages 
-        run : npm install    
-
-       - name: build 
-         run : npm run build
-
-          
-
-    
+      - name : build     
+        run: npm run build
