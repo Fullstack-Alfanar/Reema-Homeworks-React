@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Inconsolata:wght@500&family=Lora:ital,wght@1,500&family=Merriweather:ital,wght@1,300&family=Nunito+Sans:ital,wght@0,400;0,600;1,400&family=Patrick+Hand&family=Quicksand:wght@300&family=Quintessential&display=swap');
+
+
+.card{
+    border: 2px solid #c4c4c4; 
+    width: 18%; 
+    margin-right: 30px; 
+    margin-top: 10px;
+    border-radius: 10px; 
+   
+    
+
+    .lbl{
+        margin-top: 10px; 
+        padding-bottom: 5px;
+        font-family: 'Lora', serif; 
+        color: brown;
+        font-size: larger;
+    } 
+    
+    .img{
+        margin-top: 20px; 
+        width: 60%;
+        height: 60%; 
+        border-radius: 50%;
+    } 
+
+
+
+}  
+
+.card:hover{
+    border: 2px solid black;
+} 
+
+
+@media only screen and (max-width: 415px) {
+   .card{
+    width: 40%; 
+    margin-right: 30px; 
+    margin-top: 10px;
+
+   } 
+
+
+  }
+
+
+  @media only screen and (max-width: 541px) {
+    .card{
+     width: 40%; 
+     margin-right: 30px; 
+     margin-top: 10px;
+ 
+    } 
+ 
+ 
+   }
+
+   @media only screen and (max-width: 280px) {
+    .card{
+     width: 50%; 
+     margin-right: 30px; 
+     margin-top: 10px;
+ 
+    } 
+ 
+ 
+   }

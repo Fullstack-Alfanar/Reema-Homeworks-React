@@ -1,19 +1,21 @@
 
-import "../src/Styles/App.scss";
+//import "../src/Styles/App.scss";
+import ListMovies from "./components/Movies/HomePage";
 
-import NavBar from './NavBar/NavBar';
+//import NavBar from './NavBar/NavBar';
 
 
 function App() {
   return ( 
-  <>
-    <div className="App">
+  
+    <div > 
+    <ListMovies/>
       
-           <NavBar />
+           {/* <NavBar /> */}
     </div>  
   
    
-    </>
+  
   );
 }
 
